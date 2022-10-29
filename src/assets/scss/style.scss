@@ -1,0 +1,65 @@
+@import "globals/vars";
+@import "vendor/reset";
+@import "globals/globals";
+@import "globals/header";
+@import "blocks/banner";
+// @import "globals/footer";
+
+//vars 
+
+:root {
+    --clr-grey:#717A90;
+    --clr-pink: #F0998D ;
+    --clr-dark: #1D2736; 
+
+
+}
+html {
+    height: 100%;
+    // font-size: 62.5%;
+    //equivalent 10px//  
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    //normalize css
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+  
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+
+}
+// footer {
+//     flex: 0 0 auto;
+    
+// }
+[class*="container"]{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+   
+   
+}
+
+   
+   
+   
+
+
+
+
+
+
+
